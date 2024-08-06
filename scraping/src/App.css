@@ -36,3 +36,155 @@
     transform: rotate(360deg);
   }
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  max-width: 100%;
+}
+
+.submit input[type="text"] {
+  flex: 1; /* Allows input to take up available space */
+  max-width: 400px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-size: 16px;
+  height: auto;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.submit input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.submit button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px; /* Adjust padding for better alignment */
+  font-size: 16px;
+  margin-left: 5px;
+  height: auto;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+.submit button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.img{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  padding: 10px;
+  /* border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); */
+}
+
+.pagination button{
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  /* color: white; */
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.pagination button.active{
+  background-color: #45ff64;
+  color: black;
+}
+
+.pagination button:disabled{
+  background-color: #333;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
