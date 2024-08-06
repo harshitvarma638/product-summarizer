@@ -8,6 +8,11 @@ const Card = ({products}) => {
                     <img src={product.image} alt={product.imageTitle} className='img'/>
                     <a href={product.link} target="_blank">Link</a>
                     <p>{product.imageTitle}</p>
+                    <div className="summary">
+                        {product.summary.split('\n').map((line, i) => (
+                            <p key={i}>{line}</p>
+                        ))}
+                    </div>
                 </div>
             ))}
         </div>

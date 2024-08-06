@@ -88,6 +88,14 @@
   color: #333;
 }
 
+.summary {
+  font-size: 14px;
+  color: #555;
+}
+
+.summary p {
+  margin: 4px 0;
+}
 
 .container{
   display: flex;
@@ -157,34 +165,35 @@ label{
   border-radius: 5px;
 }
 
-.pagination{
+
+/* .pagination{
   display: flex;
   justify-content: center;
   margin: 25px;
   padding: 10px;
   /* border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1); */
-}
+/* } */
 
-.pagination button{
+/* .pagination button{
   margin: 0 5px;
   padding: 5px 10px;
   border: 1px solid #333;
   border-radius: 5px;
   background-color: #fff;
   /* color: white; */
-  cursor: pointer;
+  /* cursor: pointer;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .pagination button.active{
   background-color: #45ff64;
   color: black;
-}
+} */
 
-.pagination button:disabled{
+/* .pagination button:disabled{
   background-color: #333;
   color: white;
   cursor: not-allowed;
   opacity: 0.5;
-}
+} */
